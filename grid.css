@@ -10,20 +10,27 @@
     place-items: center;
     min-height: 100vh;
   }
-  
+  header nav.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #c7141400;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px #e0e0e0;
+  }
   main {
     display: grid;
     margin: auto;
     width: 40%;
     padding: 30px;
-    /* height: 70vh; */
     margin-top: 50px;
     grid-template-areas:
       "a a b"
       "a a b"
       "c d d"
       "c e e";
-    /* grid-auto-rows: 250px; */
     grid-template-columns: 1.4fr 0.6fr 1fr;
     grid-template-rows: 1fr 1fr 0.8fr 1.2fr;
     grid-auto-rows: minmax(250px, auto);
@@ -38,25 +45,17 @@
   .brown {
     background-color: rgb(196, 29, 29);
     grid-area: a;
-    /* grid-row-start: span 2;
-    grid-column-start: span 2.2; */
-    /* grid-column-end: 3; */
   }
   
   .yellow {
     background-color: rgb(238, 234, 27);
     grid-area: b;
-    /* grid-row-start: span 2;
-    grid-column-start: span 1; */
-    /* grid-column-start: 3;
-    grid-column-end: 3; */
+
   }
   
   .green {
     background-color: green;
     grid-area: c;
-    /* grid-row-start: span 2;
-    grid-column-start: span 1; */
   }
   
   .f-blue {
