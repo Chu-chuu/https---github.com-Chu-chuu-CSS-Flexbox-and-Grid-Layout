@@ -165,6 +165,7 @@ header nav.navbar ul {
         font-weight:400;
         border-radius: 90px;
         border: none;
+        margin-bottom: 5px;
     }
     .f {
         color: hsl(31, 77%, 52%);
