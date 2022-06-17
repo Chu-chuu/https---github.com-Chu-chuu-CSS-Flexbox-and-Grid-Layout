@@ -31,6 +31,7 @@ header nav.navbar ul {
         flex-flow: wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
     }
     .box {
         width: 280px;
@@ -107,22 +108,24 @@ header nav.navbar ul {
 }
 @media screen and (max-width: 600px) and (min-width:300px){
     main {
-        width: 100%;
-        display: flex;
+        /* width: 100%; */
+        /* display: flex; */
+        margin-bottom: 20px;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-content: center;
-        text-align: center; 
+        /* text-align: center;  */
     }
 
     .box {
-        padding: 3rem;
+        max-width: 100%;
+        /* padding: 3rem; */
     }
 
     .first {
         background-color: hsl(31, 77%, 52%);
-        border-radius: 6px 6px 0 0;
+        border-radius: 10px 10px 0 0;
     }
     
     .second {
@@ -132,7 +135,7 @@ header nav.navbar ul {
     
     .third {
         background-color: hsl(179, 100%, 13%);
-        border-radius: 0 0 6px 6px;
+        border-radius: 0 0 10px 10px;
     }
     .content {
         padding: 10px;
